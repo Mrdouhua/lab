@@ -3,30 +3,30 @@
 - 技术选用
   - ES6 + jQuery + React
   - 构建工具：webpack
-  - 协同工具：git + coding + sourceTree
-
-- 页面结构（除后台管理页外共12张）
+  - 协同工具：git + coding + github
+  - 路由管理：react-router
+- 组件结构（除后台管理页外共12个）
   - 首页
-      - 命名：index.html
-  - 关于我们（静态数据）
-      - 命名：about.html
+      - 命名：index.js
+  - 关于我们（静态数据）
+      - 命名：about.js
   - 成员介绍
-      - 命名：member.html
+      - 命名：member.js
       - 子页
-          - 成员详情页：memberDet.html
+          - 成员详情页：memberDet.js
   - 教学活动
-      - 命名：studyActivity.html
+      - 命名：studyActivity.js
       - 子页
-          - 活动详情页：studyActivityDet.html
+          - 活动详情页：studyActivityDet.js
   - 研究动态
-      - 命名：studyTrends.html
+      - 命名：studyTrends.js
       - 子页
-          - 活动详情页：studyTrendsDet.html
+          - 活动详情页：studyTrendsDet.js
   - 研究生培养
-      - 命名：masterTraining.html
+      - 命名：masterTraining.js
   - 产品与服务
-      - 命名：product.html
+      - 命名：product.js
   - 往届成员
-      - 命名：oldMember.html
+      - 命名：oldMember.js
       - 子页
-          - 成员详情页：oldMemberDet.html
+          - 成员详情页：oldMemberDet.js

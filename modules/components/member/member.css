@@ -1,0 +1,113 @@
+/* 成员介绍 */
+.main {
+	width: 960px;
+	min-height: calc(100vh - 17.8125em);
+	margin: 0 auto;
+	background-color: #fcf9f9;
+}
+
+.main_wrap {
+	width: 780px;
+	min-height: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.title {
+	width: 100%;
+	height: 115px;
+	line-height: 115px;
+}
+h2.title1 {
+	width: 167px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #fbfdfd;
+	padding: 0;
+	margin: 0;
+	background: url(../../../public/img/lesson_tit_bg.png) no-repeat;
+}
+
+.member {
+	width: 780px;
+	min-height: 500px;
+}
+.member_list {
+	width: 780px;
+	height: 250px;
+}
+.member_pic {
+	width: 179px;
+	height: 224px;
+	float: left;
+	margin: 7px 0 0 0;
+}
+.member_pic img {
+	width: 100%;
+	height: 100%;
+}
+.member_info {
+	width: 515px;
+	height: 250px;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 5px 20px 5px;
+	border-top: 7px solid #0076c9;
+	position: relative;
+	
+}
+h3.member_name {
+	font-size: 24px;
+	color: #0076c9;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
+}
+.job {
+	width: 505px;
+	height: 110px;
+}
+.job_tit {
+	font-size: 20px;
+	color: #4e4e4f;
+	height: 30px;
+	line-height: 30px;
+}
+.job_info {
+	width: 505px;
+	height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	color: #4e4e4f;
+	margin: 10px 0 0 0;
+	text-indent: 2em;
+}
+.email {
+	height: 30px;
+	line-height: 30px;
+	color: #0076c9;
+	font-size: 18px;
+}
+.more {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	width: 39px;
+	height: 9px;
+}
+.more a {
+	text-decoration: none;
+	display: inline-block;
+	width: 39px;
+	height: 9px;
+	background: url(../../../public/img/more.png) no-repeat;
+}
+.more a:hover{
+	background: url(../../../public/img/more1.png) no-repeat;
+}

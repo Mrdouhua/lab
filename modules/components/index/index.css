@@ -1,0 +1,171 @@
+/* 主页 */
+.container {
+	width: 930px;
+	margin: 0 auto;
+	background-color: #fcf9f9;
+	padding: 15px;
+}
+.container_wrap {
+	width: 930px;
+	min-height: 530px;
+	margin: 0 auto;
+}
+
+/* 侧边栏 */
+.sidebar {
+	width: 230px;
+	height: 530px;
+	float: left;
+}
+.section {
+	width: 230px;
+	height: 258px;
+}
+.title {
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	position: relative;
+	background-color: #f1f3f3;
+	box-shadow: 0 0 4px 0 #666;
+}
+.title h2 {
+	font-size: 19px;
+	color: #f65a5b;
+	margin: 0;
+	float: left;
+	padding: 0 0 0 15px;
+}
+.more {
+	right: 15px;
+	position: absolute;
+}
+.more a {
+	display: inline-block;
+	text-decoration: none;
+	width: 39px;
+	height: 9px;
+	background: url(../../../public/img/more1.png) no-repeat;
+}
+.more a:hover {
+	background: url(../../../public/img/more.png) no-repeat;
+}
+/* section内容部分 */
+.item  {
+	width: 230px;
+	height: 210px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.item ul {
+	margin: 0;
+	padding: 0;
+}
+.item ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.item ul li a {
+	text-decoration: none;
+	color: #4f4c4c;
+	font-size: 12px;
+	display: inline-block;
+	padding: 0 15px;
+	width: 230px;
+	height: 42px;
+	box-sizing: border-box;
+	line-height: 21px;
+	position: relative;
+}
+b.date {
+	color: #4f4c4c;
+	font-weight: normal;
+	display: inline-block;
+	margin-left: 15px;
+}
+b.date1 {
+	color: #4f4c4c;
+	font-weight: normal;
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+}
+
+.item ul li a:hover,.item ul li a:hover .date,.item ul li a:hover .date1 {
+	color: #0076c9;
+}
+
+.mt14 {
+	margin-top: 14px;
+}
+
+
+/* main */
+.main {
+	width: 685px;
+	height: 530px;
+	float: right;
+	background-color: #f1f3f3;
+	position: relative;
+}
+/* .main_title {
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+} */
+.main_title {
+	width: 100%;
+	height: 39px;
+	line-height: 43px;
+	border-top: 4px solid #f65a5b;
+}
+.main_title h2 {
+	font-size: 19px;
+	color: #f65a5b;
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+.about_pic {
+	width: 607px;
+	height: 234px;
+	margin: 0 auto;
+}
+.about_pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.about_us_article {
+	width: 685px;
+	height: 220px;
+	box-sizing: border-box;
+	padding: 15px 15px 0 15px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.about_us_article p {
+	margin: 0;
+	padding: 0;
+	text-indent: 2em;
+	color: #302f2f;
+	font-size: 15px;
+	line-height: 30px;
+}
+.more1 {
+	width: 39px;
+	height: 9px;
+	right: 15px;
+	position: absolute;
+	bottom: 15px;
+}
+.more1 a {
+	display: inline-block;
+	text-decoration: none;
+	width: 39px;
+	height: 9px;
+	background: url(../../../public/img/more1.png) no-repeat;
+}
+.more1 a:hover {
+	background: url(../../../public/img/more.png) no-repeat;
+}

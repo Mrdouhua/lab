@@ -1,0 +1,89 @@
+/* 成员介绍 */
+.main {
+	width: 960px;
+	min-height: calc(100vh - 17.8125em);
+	margin: 0 auto;
+	background-color: #fcf9f9;
+}
+
+.main_wrap {
+	width: 780px;
+	min-height: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.title {
+	width: 100%;
+	height: 115px;
+	line-height: 115px;
+}
+h2.title1 {
+	width: 167px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #fbfdfd;
+	padding: 0;
+	margin: 0;
+	/* 这里的背景图片的url要相对于最外面的图片 */
+	background: url(../../../public/img/lesson_tit_bg.png) no-repeat;
+}
+
+.content {
+	width: 685px;
+	min-height: 400px;
+	margin: 0 auto;
+}
+.section {
+	width: 685px;
+	min-height: 250px;
+}
+.pic_show {
+	width: 500px;
+	height: 220px;
+	margin: 0 auto;
+}
+.pic_show img {
+	width: 100%;
+	height: 100%;
+}
+.section p {
+	margin: 15px 0 0 0;
+	padding: 0;
+	max-height: 165px;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	color: #7b7979;
+	text-indent: 2em;
+	line-height: 30px;
+}
+/* 研究方向 */
+.reseach_dir {
+	width: 685px;
+	min-height: 100px;
+	max-height: 250px;
+	overflow: hidden;
+}
+.reseach_tit h2 {
+	height: 30px;
+	line-height: 30px;
+	color: #0076c9;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+.reseach_dir p {
+	margin: 15px 0 0 0;
+	padding: 0;
+	max-height: 165px;
+	text-overflow: ellipsis;
+	text-indent: 2em;
+	font-size: 16px;
+	color: #7b7979;
+	text-indent: 2em;
+	line-height: 30px;
+}

@@ -1,0 +1,105 @@
+/* 成员详情 */
+.main {
+	width: 960px;
+	min-height: calc(100vh - 17.8125em);
+	margin: 0 auto;
+	background-color: #fcf9f9;
+}
+
+.main_wrap {
+	width: 780px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.title {
+	width: 100%;
+	height: 115px;
+	line-height: 115px;
+}
+h2.title1 {
+	width: 167px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #fbfdfd;
+	padding: 0;
+	margin: 0;
+	background: url(../../../public/img/lesson_tit_bg.png) no-repeat;
+}
+.mem_wrap {
+	width: 670px;
+	margin: 0 auto;
+}
+/* 成员基本信息 */
+.information {
+	width: 460px;
+	height: 224px;
+	margin: 0 auto;
+}
+.member_pic {
+	width: 179px;
+	height: 224px;
+	float: left;
+}
+.member_pic img {
+	width: 100%;
+	height: 100%;
+}
+.basic_info {
+	width: 200px;
+	height: 224px;
+	float: right;
+	box-sizing: border-box;
+	padding: 40px 0 0 0;
+}
+p.member_name {
+	height: 30px;
+	line-height: 30px;
+	color: #0076c9;
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+}
+.job,.email {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	color: #000407;
+}
+.job_name,.email1 {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+
+/* 详细信息 */
+.detail {
+	width: 670px;
+	min-height: 90px;
+}
+
+h3.info_tit {
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	line-height: 30px;
+	color: #0979ca;
+	font-size: 20px;
+	font-weight: bold;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.detail p {
+	width: 670px;
+	min-height: 60px;
+	text-indent: 2em;
+	word-break: break-word;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}

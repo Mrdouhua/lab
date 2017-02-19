@@ -7,82 +7,52 @@ class Home extends React.Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			studyTrendsData: "",
-			studyActivityData: "..."
+			studyTrendsData: [],
+			studyActivityData: []
 		};
 	}
 
 	getData() {
 		// 研究动态的内容加载
 		(() => {
-			let promise = new Promise((resolve,reject) => {
-				$.ajax({
-					type: "get",
-					url: "http://rap.taobao.org/mockjsdata/9989/index",
-					dataType: "json",
-					success: (data) => {
-						if(data.status!=0){
-							resolve(data);
-						} else {
-							reject(new Error("验证失败!"));
-						}
-					},
-					error: () => {
-						reject(new Error("网络错误!"));
+			$.ajax({
+				type: "get",
+				url: "http://rap.taobao.org/mockjsdata/9989/index",
+				dataType: "json",
+				success: (data) => {
+					if(data.status!=0){
+						this.setState({
+							studyTrendsData: data.data
+						})
+					} else {
+						alert("验证失败!");
 					}
-				})
+				},
+				error: () => {
+					alert("网络错误!");
+				}
 			})
-			promise.then((data)=>{
-				let studyTrendsCon = data.data,
-					str = '';
-
-				studyTrendsCon.map((items)=>{
-					str += `<li>
-						   		<a href='#'>${items.items}
-						   			<b class='date1'>${items.date}</b>
-						   		</a>
-						   	</li>`;
-				})
-				$("#studyTrendsItem").html(str);
-			}).catch((value)=>{
-				alert(value);
-			});
 		})();
 
 		// 教学活动的内容加载
 		(() => {
-			let promise = new Promise((resolve,reject) => {
-				$.ajax({
-					type: "get",
-					url: "http://rap.taobao.org/mockjsdata/9989/index",
-					dataType: "json",
-					success: (data) => {
-						if(data.status!=0){
-							resolve(data);
-						} else {
-							reject(new Error("验证失败!"));
-						}
-					},
-					error: () => {
-						reject(new Error("网络错误!"));
+			$.ajax({
+				type: "get",
+				url: "http://rap.taobao.org/mockjsdata/9989/index",
+				dataType: "json",
+				success: (data) => {
+					if(data.status!=0){
+						this.setState({
+							studyActivityData: data.data
+						})
+					} else {
+						alert("验证失败!");
 					}
-				})
+				},
+				error: () => {
+					alert("网络错误!");
+				}
 			})
-			promise.then((data)=>{
-				let studyActivityCon = data.data,
-					aStr = '';
-
-				studyActivityCon.map((items)=>{
-					aStr += `<li>
-						   		<a href='#'>${items.items}
-						   			<b class='date1'>${items.date}</b>
-						   		</a>
-						   	</li>`;
-				})
-				$("#studyActivityItem").html(aStr);
-			}).catch((value)=>{
-				alert(value);
-			});
 		})()
 	}
 
@@ -91,6 +61,24 @@ class Home extends React.Component{
 	}
 
 	render(){
+		// 第一个数据
+		let str = this.state.studyTrendsData;
+		let A = str.map((items)=>{
+			return <li>
+				   		<a href='#'>{items.items}
+				   			<b class='date1'>{items.date}</b>
+				   		</a>
+				   	</li>;
+		});
+		// 第二个数据
+		let iStr = this.state.studyActivityData;
+		let B = iStr.map((items)=>{
+			return <li>
+				   		<a href='#'>{items.items}
+				   			<b class='date1'>{items.date}</b>
+				   		</a>
+				   	</li>;
+		});
 		return (
 			<div className={style.container}>
 				<div className={style.container_wrap}>
@@ -103,7 +91,7 @@ class Home extends React.Component{
 								</div>
 							</div>
 							<div className={style.item}>
-								<ul className={style.studyTrendsItem} id="studyTrendsItem">{this.state.studyTrendsData}</ul>
+								<ul className={style.studyTrendsItem} id="studyTrendsItem">{A}</ul>
 							</div>
 						</div>
 						<div className={style.section4} className={style.mt14}>
@@ -114,7 +102,7 @@ class Home extends React.Component{
 								</div>
 							</div>
 							<div className={style.item}>
-								<ul className={style.studyActivityItem} id="studyActivityItem">{this.state.studyActivityData}</ul>
+								<ul className={style.studyActivityItem} id="studyActivityItem">{B}</ul>
 							</div>
 						</div>
 						

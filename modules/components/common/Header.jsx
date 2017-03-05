@@ -6,9 +6,6 @@ import style from './common.css'
 class Header extends React.Component{
 	constructor(props) {
 		super(props);
-		/*this.state = {
-			left: 0
-		};*/
 	}
 	// 切换导航栏显示相应的滑块
 	changeNav() {
@@ -34,7 +31,6 @@ class Header extends React.Component{
 				}
 			},30)
 		}
-
 		for(let i=0,len=oLi.length-1; i<len; i++){
 			// 滑块移动到鼠标对应的li
 			oLi[i].onmouseover = function(){
@@ -47,7 +43,6 @@ class Header extends React.Component{
 			// 点击切换组件时改变滑块的位置
 			oLi[i].onclick = function(){
 				oBarLeft = this.offsetLeft;
-				// console.log(window.location.pathname);
 			};
 		}
 	}
@@ -93,6 +88,7 @@ class Header extends React.Component{
 	}
 
 	render() {
+		console.log("render");
 		// 把url参数存在数组里面
 		let arr = [
 			'/',
@@ -143,7 +139,6 @@ class Header extends React.Component{
 			          <li className={style.navItem}><Link className={style.navLink} to="/about">关于我们</Link></li>
 			          <li className={style.navItem}><Link className={style.navLink} to="/member">成员介绍</Link></li>
 			          <li className={style.navItem}><Link className={style.navLink} to='studyActivity'>教学活动</Link></li>
-			          <li className={style.navItem}><Link className={style.navLink} to='studyActivityDet'>教学活动</Link></li>
 			          <li className={style.navItem}><Link className={style.navLink} to='studyTrends'>研究动态</Link></li>
 			          <li className={style.navItem}><Link className={style.navLink} to='masterTraining'>研究生培养</Link></li>
 			          <li className={style.navItem}><Link className={style.navLink} to='product'>产品与服务</Link></li>

@@ -95,7 +95,6 @@ class Header extends React.Component{
 			'/about',
 			'/member',
 			'/studyActivity',
-			'studyActivityDet',
 			'/studyTrends',
 			'/masterTraining',
 			'/product',

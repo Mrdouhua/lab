@@ -15,10 +15,9 @@
 .activity {
 	width: 780px;
 	margin: 0 auto;
-	/*margin-top: 33px;*/
 }
 
-.lessonTit {
+.activityTit {
 	width: 167px;
 	line-height: 40px;
 	margin: 33px 0 36px 0;
@@ -29,13 +28,15 @@
 	color: #fbfdfd;
 }
 
-.lessonCon {
+.activityCon {
+	position: relative;
 	width: 100%;
 }
 
+/* 活动课程项 */
 .lessonItem {
 	width: 100%;
-	height: 105px;
+	/*height: 105px;*/
 	margin-bottom: 53px;
 	overflow: hidden;
 }
@@ -44,6 +45,7 @@
 	float: right;
 	width: 612px;
 	height: 105px;
+	overflow: hidden;
 }
 
 .lessItemTit {
@@ -54,6 +56,11 @@
 	font-size: 22px;
 	font-weight: 500;
 	color: #0076c9;
+}
+
+.lessItemImg {
+	width: 150px;
+	height: 105px;
 }
 
 .lessItemPer, .lessItemDate {
@@ -67,7 +74,7 @@
 .lessItemPar {
 	float: left;
 	width: 100%;
-	height: 50px;
+	min-height: 50px;
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
@@ -83,52 +90,64 @@
 }
 
 .lessonPage {
-	float: left;
-	width: 300px;
-	margin: 0;
-	margin-left: 250px;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
 	overflow: hidden;
-	/*text-align: center;*/
 }
 
 .pageUl {
 	float: left;
-	width: 200px;
 	height: 20px;
 	padding: 0;
 	margin: 0;
-	/*margin-left: 200px; */
 	text-align: center;
-	/*margin: 0 auto;*/
 }
 
 .preBtn, .nexBtn {
+	display: inline-block;
 	float: left;
+	width: 88px;
+	line-height: 35px;
+	border: 1px solid #b2d6ef;
 	font-size: 16px;
-	color: #060606;
+	text-align: center;
+	color: #0076c9;
 	cursor: pointer;
 }
 
-.nexBtn {
-	float: right;
+.preBtn:hover, .nexBtn:hover {
+	border: 1px solid #00aac9;
+}
+
+.preBtn {
+	margin-right: 8px;
 }
 
 .pageUlItem {
 	float: left;
-	width: 20px;
-	height: 20px;
+	width: 35px;
+	line-height: 35px;
+	margin-right: 8px;
+	border: 1px solid #b2d6ef;
 	font-size: 16px;
-	color: #060606;
+	color: #0076c9;
 	text-align: center;
 	list-style-type: none;
 	cursor: pointer;
 }
 
+.pageUlItem:hover {
+	border: 1px solid #00aac9;
+}
+
 .pageUlItemCur {
-	color: #0076c9;
+	border-color: #fcf9f9;
 }
 
 .itemNum {
-	float: left;
+	right: 0;
+	line-height: 35px;
 	margin-left: 15px;
+	color: #0076c9;
 }

@@ -1,0 +1,73 @@
+.conWrap {
+	width: 100%;
+}
+
+.container {
+	width: 960px;
+	min-height: 500px;
+	margin: 0 auto;
+	background-color: #fcf9f9;
+	overflow: hidden;
+}
+
+.activityMain {
+	width: 770px;
+	margin: 0 auto;
+}
+
+.activityHea {
+	width: 167px;
+	line-height: 40px;
+	margin: 33px 0 36px 0;
+	font-size: 22px;
+	font-weight: 500;
+	text-align: center;
+	background: url('../img/lesson_tit_bg.png') no-repeat;
+	color: #fbfdfd;
+}
+
+.activityTit {
+	width: 100%;
+	line-height: 60px;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	text-align: center;
+	background-color: #54bfbc;
+	color: #0a0a0a;
+}
+
+.activityExt {
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.actiDate, .actiAuthor {
+	font-size: 15px;
+	color: #ff0000;
+}
+
+.actiAuthor {
+	margin-left: 50px;
+}
+
+.actiResouDL {
+	display: block;
+	text-decoration: none;
+}
+
+.actiResouBtn {
+	display: block;
+	margin-left: 32px;
+	padding-left: 24px;
+	font-size: 15px;
+	background: url(../../../public/img/actiResouBtn_bg.png) no-repeat 0 50%;
+	color: #0076c9;
+}
+
+.actiDetail {
+	margin: 20px 0;
+	font-size: 16px;
+	color: #050505;
+}

@@ -12,7 +12,7 @@ class Header extends React.Component{
 		let oNav = document.getElementById('nav'),
 			oLi = oNav.getElementsByTagName('li'),
 			Bar = document.getElementById('slideBar'),
-			oBarLeft = Bar.style.left,
+			BarLeft = parseInt(Bar.style.left),
 			iSpeed = 0,
 			left = 0;
 
@@ -38,11 +38,12 @@ class Header extends React.Component{
 			};
 			// 鼠标移出时滑块移回原来的位置
 			oLi[i].onmouseout = function(){
-				move(Bar,oBarLeft);
+				console.log(BarLeft);
+				move(Bar,BarLeft);
 			};
 			// 点击切换组件时改变滑块的位置
 			oLi[i].onclick = function(){
-				oBarLeft = this.offsetLeft;
+				oBarLeft = this.offsetLeft + 'px';
 			};
 		}
 	}
@@ -88,7 +89,6 @@ class Header extends React.Component{
 	}
 
 	render() {
-		console.log("render");
 		// 把url参数存在数组里面
 		let arr = [
 			'/',
